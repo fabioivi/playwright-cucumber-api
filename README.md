@@ -6,6 +6,7 @@ Este projeto integra Playwright e Cucumber para testes automatizados de APIs uti
 - **Playwright**: Framework para automação de testes end-to-end.
 - **Cucumber**: Framework BDD para escrita de cenários em Gherkin.
 - **Node.js**: Ambiente de execução JavaScript.
+- **cucumber-html-reporter**: Gera relatórios HTML dos testes Cucumber.
 
 ## Estrutura do Projeto
 ```
@@ -39,6 +40,19 @@ tests/
   ```powershell
   npx cucumber-js
   ```
+
+## Relatório HTML dos Testes
+Sempre que os testes são executados, é gerado automaticamente o arquivo `cucumber_report.html` na raiz do projeto.
+
+### O que contém o arquivo `cucumber_report.html`?
+O relatório apresenta:
+- Resumo dos cenários e features testados
+- Status de sucesso ou falha de cada cenário
+- Detalhes dos steps executados
+- Mensagens de erro (caso existam)
+- Visualização organizada por feature e cenário
+
+Abra o arquivo no navegador para visualizar os resultados dos testes de forma clara e detalhada.
 
 ## Exemplo de Cenário (get-random-user.feature)
 ```gherkin

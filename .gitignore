@@ -6,3 +6,19 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 cucumber-report.html
+
+# Playwright cache
+.cache/ms-playwright/
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# Logs and temporary files
+*.log
+tmp/
+
+# Operating System specific files
+.DS_Store
+Thumbs.db

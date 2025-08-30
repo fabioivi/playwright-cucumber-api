@@ -15,11 +15,11 @@
             "line": 4,
             "name": "I have a valid Spotify access token",
             "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:11"
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 257119699
+              "duration": 240389900
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 5,
             "name": "I search for artist \"Adele\"",
             "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:30"
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 452789200
+              "duration": 388397300
             }
           },
           {
@@ -45,7 +45,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2996200
+              "duration": 984099
             }
           },
           {
@@ -54,11 +54,11 @@
             "line": 7,
             "name": "the response body should contain artist \"Adele\"",
             "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:44"
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:28"
             },
             "result": {
               "status": "passed",
-              "duration": 1760500
+              "duration": 652600
             }
           },
           {
@@ -66,7 +66,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 223799
+              "duration": 94100
             }
           },
           {
@@ -74,87 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2305800
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "spotify-artist-search;search-for-a-non-existent-artist",
-        "keyword": "Scenario",
-        "line": 9,
-        "name": "Search for a non-existent artist",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 10,
-            "name": "I have a valid Spotify access token",
-            "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 154157500
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 11,
-            "name": "I search for artist \"ZZZZZZZZZZZZZZZZZZZ\"",
-            "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:30"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 331901700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 12,
-            "name": "the response status code should be 200",
-            "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\generic-steps.js:5"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1281200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "the response body should not contain any artists",
-            "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:50"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 10652199,
-              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m[{\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/23r9UPd8c7bSjjB56DrwcZ\"}, \"followers\": {\"href\": null, \"total\": 17}, \"genres\": [], \"href\": \"https://api.spotify.com/v1/artists/23r9UPd8c7bSjjB56DrwcZ\", \"id\": \"23r9UPd8c7bSjjB56DrwcZ\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab67616d0000b27354dd62dd50d80e2fa6f11e7b\", \"width\": 640}, {\"height\": 300, \"url\": \"https://i.scdn.co/image/ab67616d00001e0254dd62dd50d80e2fa6f11e7b\", \"width\": 300}, {\"height\": 64, \"url\": \"https://i.scdn.co/image/ab67616d0000485154dd62dd50d80e2fa6f11e7b\", \"width\": 64}], \"name\": \"DJ zzzzzzzzzzzzzzzzzzzz\", \"popularity\": 0, \"type\": \"artist\", \"uri\": \"spotify:artist:23r9UPd8c7bSjjB56DrwcZ\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/4DOlsUBpxw706SXx05Xoi2\"}, \"followers\": {\"href\": null, \"total\": 202622}, \"genres\": [\"lullaby\", \"children's music\"], \"href\": \"https://api.spotify.com/v1/artists/4DOlsUBpxw706SXx05Xoi2\", \"id\": \"4DOlsUBpxw706SXx05Xoi2\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5eb4924005e469465582ac3f76d\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab676161000051744924005e469465582ac3f76d\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f1784924005e469465582ac3f76d\", \"width\": 160}], \"name\": \"Xuxa\", \"popularity\": 60, \"type\": \"artist\", \"uri\": \"spotify:artist:4DOlsUBpxw706SXx05Xoi2\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/7kk9ucvRJim0NMM89Lml2Y\"}, \"followers\": {\"href\": null, \"total\": 240929}, \"genres\": [\"phonk\", \"brazilian phonk\"], \"href\": \"https://api.spotify.com/v1/artists/7kk9ucvRJim0NMM89Lml2Y\", \"id\": \"7kk9ucvRJim0NMM89Lml2Y\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5eba079053b844913e4efa23a47\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab67616100005174a079053b844913e4efa23a47\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f178a079053b844913e4efa23a47\", \"width\": 160}], \"name\": \"MXZI\", \"popularity\": 84, \"type\": \"artist\", \"uri\": \"spotify:artist:7kk9ucvRJim0NMM89Lml2Y\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/17WuN6z31FNc74WTg828u5\"}, \"followers\": {\"href\": null, \"total\": 18584}, \"genres\": [\"lullaby\"], \"href\": \"https://api.spotify.com/v1/artists/17WuN6z31FNc74WTg828u5\", \"id\": \"17WuN6z31FNc74WTg828u5\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5eb0c949da6213dddfe02da23f9\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab676161000051740c949da6213dddfe02da23f9\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f1780c949da6213dddfe02da23f9\", \"width\": 160}], \"name\": \"Lala Kids\", \"popularity\": 67, \"type\": \"artist\", \"uri\": \"spotify:artist:17WuN6z31FNc74WTg828u5\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/5dC3MIPsF3nBg3iNJfhBsj\"}, \"followers\": {\"href\": null, \"total\": 135956}, \"genres\": [\"lullaby\", \"children's music\"], \"href\": \"https://api.spotify.com/v1/artists/5dC3MIPsF3nBg3iNJfhBsj\", \"id\": \"5dC3MIPsF3nBg3iNJfhBsj\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5ebce0410c0d38d05f4666563d1\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab67616100005174ce0410c0d38d05f4666563d1\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f178ce0410c0d38d05f4666563d1\", \"width\": 160}], \"name\": \"Bob Zoom\", \"popularity\": 61, \"type\": \"artist\", \"uri\": \"spotify:artist:5dC3MIPsF3nBg3iNJfhBsj\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/6agiBnabjdR7IlQKizK5Ta\"}, \"followers\": {\"href\": null, \"total\": 329589}, \"genres\": [\"lullaby\", \"children's music\"], \"href\": \"https://api.spotify.com/v1/artists/6agiBnabjdR7IlQKizK5Ta\", \"id\": \"6agiBnabjdR7IlQKizK5Ta\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5eb1dade5eed96ca6c1a7b7929a\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab676161000051741dade5eed96ca6c1a7b7929a\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f1781dade5eed96ca6c1a7b7929a\", \"width\": 160}], \"name\": \"Bolofofos\", \"popularity\": 56, \"type\": \"artist\", \"uri\": \"spotify:artist:6agiBnabjdR7IlQKizK5Ta\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/4y6dwT7Vzi6tFHJmr2TU02\"}, \"followers\": {\"href\": null, \"total\": 44924}, \"genres\": [\"phonk\", \"brazilian phonk\"], \"href\": \"https://api.spotify.com/v1/artists/4y6dwT7Vzi6tFHJmr2TU02\", \"id\": \"4y6dwT7Vzi6tFHJmr2TU02\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5ebe278ebf892c4cc1aa9b22bc9\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab67616100005174e278ebf892c4cc1aa9b22bc9\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f178e278ebf892c4cc1aa9b22bc9\", \"width\": 160}], \"name\": \"GXMZ\", \"popularity\": 76, \"type\": \"artist\", \"uri\": \"spotify:artist:4y6dwT7Vzi6tFHJmr2TU02\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/5sgcRRQA3HrL1AVk6oMUeg\"}, \"followers\": {\"href\": null, \"total\": 1214084}, \"genres\": [\"anime rap\"], \"href\": \"https://api.spotify.com/v1/artists/5sgcRRQA3HrL1AVk6oMUeg\", \"id\": \"5sgcRRQA3HrL1AVk6oMUeg\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5eb129d6b864fd960a8c83ff370\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab67616100005174129d6b864fd960a8c83ff370\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f178129d6b864fd960a8c83ff370\", \"width\": 160}], \"name\": \"VMZ\", \"popularity\": 60, \"type\": \"artist\", \"uri\": \"spotify:artist:5sgcRRQA3HrL1AVk6oMUeg\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/163Bo6wArUPNbzbTAgmbJQ\"}, \"followers\": {\"href\": null, \"total\": 345497}, \"genres\": [], \"href\": \"https://api.spotify.com/v1/artists/163Bo6wArUPNbzbTAgmbJQ\", \"id\": \"163Bo6wArUPNbzbTAgmbJQ\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5ebb4c43e0e03bd8ddcbf81b495\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab67616100005174b4c43e0e03bd8ddcbf81b495\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f178b4c43e0e03bd8ddcbf81b495\", \"width\": 160}], \"name\": \"VOID\", \"popularity\": 53, \"type\": \"artist\", \"uri\": \"spotify:artist:163Bo6wArUPNbzbTAgmbJQ\"}, {\"external_urls\": {\"spotify\": \"https://open.spotify.com/artist/5rql3sMywDu8xVUiynddPu\"}, \"followers\": {\"href\": null, \"total\": 120297}, \"genres\": [\"anime rap\"], \"href\": \"https://api.spotify.com/v1/artists/5rql3sMywDu8xVUiynddPu\", \"id\": \"5rql3sMywDu8xVUiynddPu\", \"images\": [{\"height\": 640, \"url\": \"https://i.scdn.co/image/ab6761610000e5eb2d2840029e5e24dee36ea468\", \"width\": 640}, {\"height\": 320, \"url\": \"https://i.scdn.co/image/ab676161000051742d2840029e5e24dee36ea468\", \"width\": 320}, {\"height\": 160, \"url\": \"https://i.scdn.co/image/ab6761610000f1782d2840029e5e24dee36ea468\", \"width\": 160}], \"name\": \"Shiny_sz\", \"popularity\": 47, \"type\": \"artist\", \"uri\": \"spotify:artist:5rql3sMywDu8xVUiynddPu\"}, …]\u001b[39m\n    at Proxy.<anonymous> (D:\\Github\\playwright-cumcumber-api\\node_modules\\playwright\\lib\\matchers\\expect.js:221:24)\n    at World.<anonymous> (file:///D:/Github/playwright-cumcumber-api/tests/steps/spotify-artist-search.js:52:30)"
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 77999
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 623399
+              "duration": 355600
             }
           }
         ],
@@ -174,11 +94,11 @@
             "line": 16,
             "name": "I have a valid Spotify access token",
             "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:11"
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:9"
             },
             "result": {
               "status": "passed",
-              "duration": 152331599
+              "duration": 155919699
             }
           },
           {
@@ -187,11 +107,11 @@
             "line": 17,
             "name": "I search for artist \"\"",
             "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:30"
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-artist-search.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 150029500
+              "duration": 157592300
             }
           },
           {
@@ -204,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 549199
+              "duration": 661499
             }
           },
           {
@@ -212,7 +132,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 57400
+              "duration": 128799
             }
           },
           {
@@ -220,7 +140,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 648799
+              "duration": 971699
             }
           }
         ],
@@ -255,7 +175,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1391699
+              "duration": 1017000
             }
           },
           {
@@ -264,11 +184,11 @@
             "line": 5,
             "name": "I request an access token from Spotify",
             "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-auth.js:19"
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-auth.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 152295599
+              "duration": 161057699
             }
           },
           {
@@ -281,7 +201,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 490999
+              "duration": 284299
             }
           },
           {
@@ -290,11 +210,11 @@
             "line": 7,
             "name": "the response body should contain an access token",
             "match": {
-              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-auth.js:33"
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-auth.js:39"
             },
             "result": {
               "status": "passed",
-              "duration": 1831799
+              "duration": 915700
             }
           },
           {
@@ -302,7 +222,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 974999
+              "duration": 290199
             }
           },
           {
@@ -310,7 +230,86 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 183300
+              "duration": 40799
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "spotify-authentication;authenticate-with-invalid-credentials",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Authenticate with invalid credentials",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I have invalid Spotify client credentials",
+            "match": {
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-auth.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 362200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I request an access token from Spotify",
+            "match": {
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-auth.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155253600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the response status code should be 400",
+            "match": {
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\generic-steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 599799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response body should contain an error message",
+            "match": {
+              "location": "file:\\D:\\Github\\playwright-cumcumber-api\\tests\\steps\\spotify-auth.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1644399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 812100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 106099
             }
           }
         ],

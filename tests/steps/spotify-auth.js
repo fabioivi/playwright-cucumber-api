@@ -11,8 +11,14 @@ let clientId, clientSecret;
 Given("I have valid Spotify client credentials", async function () {
   clientId = process.env.SPOTIFY_CLIENT_ID;
   clientSecret = process.env.SPOTIFY_CLIENT_SECRET;
-  console.log('Client ID:', clientId);  
-  console.log('Client Secret:', clientSecret);  
+//   console.log('Client ID:', clientId);  
+//   console.log('Client Secret:', clientSecret);  
+  apiRequestContext = await request.newContext();
+});
+
+Given("I have invalid Spotify client credentials", async function () {
+  clientId = "INVALID_ID";
+  clientSecret = "INVALID_SECRET";
   apiRequestContext = await request.newContext();
 });
 
@@ -33,6 +39,11 @@ When("I request an access token from Spotify", async function () {
 Then("the response body should contain an access token", async function () {
   const body = await response.json();
   expect(body).toHaveProperty("access_token");
+});
+
+Then("the response body should contain an error message", async function () {
+  const body = await response.json();
+  expect(body).toHaveProperty("error");
 });
 
 After(async function () {

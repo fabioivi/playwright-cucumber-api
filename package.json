@@ -3,18 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js --config cucumber.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.55.0",
     "@types/node": "^24.3.0"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^12.2.0"
+    "@cucumber/cucumber": "^12.2.0",
+    "dotenv": "^17.2.1"
   }
 }

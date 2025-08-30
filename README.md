@@ -10,9 +10,10 @@ Este projeto integra Playwright e Cucumber para testes automatizados de APIs uti
 
 ## Estrutura do Projeto
 ```
-cucumber.json           # Configuração do Cucumber
-package.json            # Dependências e scripts do projeto
-playwright.config.js    # Configuração do Playwright
+cucumber.mjs           # Configuração do Cucumber (ES6 modules)
+cucumber.json          # Configuração alternativa do Cucumber
+package.json           # Dependências e scripts do projeto
+playwright.config.js   # Configuração do Playwright
 tests/
   features/
     get-random-user.feature       # Cenários de teste em Gherkin
@@ -36,9 +37,9 @@ tests/
   ```powershell
   npm test
   ```
-  Ou:
+  Ou diretamente:
   ```powershell
-  npx cucumber-js
+  npx cucumber-js --config cucumber.mjs
   ```
 
 ## Relatório HTML dos Testes
@@ -111,19 +112,9 @@ After(async function () {
         apiRequestContext = null;
     }
 });
-```## Configuração do Cucumber (cucumber.json)
-```json
-{
-  "default": {
-    "formatOptions": {
-      "snippetInterface": "async-await"
-    },
-    "paths": ["tests/features/**/*.feature"],
-    "publishQuiet": true,
-    "dryRun": false,
-    "require": ["tests/steps/*.js"]
-  }
-}
+```## Configuração do Cucumber (cucumber.mjs)
+```javascript
+export default `--require tests/steps/*.js --format progress --format json:cucumber_report.json`;
 ```
 
 ## Configuração do Playwright (playwright.config.js)
